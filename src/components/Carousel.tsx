@@ -16,7 +16,7 @@ function Carousel({ items, slideClassName = 'aspect-[16/9]' }: Props) {
 	const [index, setIndex] = useState(0)
 	const [paused, setPaused] = useState(false)
 	const total = items.length
-	const current = items[index]
+	// const current = items[index]
 
 	function prev() {
 		setIndex((i) => (i - 1 + total) % total)
